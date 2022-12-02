@@ -1,0 +1,803 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SDQ Project 2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        ul.horizontal {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.horizontal li {
+            float: left;
+        }
+
+        ul.horizontal li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.horizontal li a:hover:not(.active) {
+            background-color: cyan;
+            color: black;
+        }
+
+        ul.horizontal li a.active {
+            background-color: #04AA6D;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky-top">
+        <div class="w3-col m8">
+            <ul class="horizontal">
+                <li><a class="navbar-brand" href="index.html">SDQ Project 2</a></li>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="testScope.html">Test Scope</a></li>
+                <li><a href="testPlan.html">Test Plan and Integration</a></li>
+                <li><a class="active" href="validationTest.html">Validation Test</a></li>
+                <li><a href="complete.html">Full Text</a></li>
+                <li class="rightli" style="float:right"><a href="#">Sarthak
+                K., Sarthak V., Mehul B., Priyanshi</a>
+                </li>
+            </ul>
+            <br>
+        </div>
+
+        <main class="container">
+
+            <h1 style="text-align: center; padding: .5em 0 .75em 0"><b><u>Centralized Food Ordering Portal: Virginia Tech
+                    </u></b></h1>
+            <h2>Validation Tests</h2>
+
+            <h3><u>Test Procedure</u></h3>
+            <p>Once development is complete, we will set up a timetable for validating testing to guarantee that we are checking out the final, deliverable portal. Validation testing will be used to ensure that all of the system's components are communicating effectively with one another. As soon as we get access to all of the necessary resources, we will experiment with a few things that we couldn't try out beforehand.</p>
+            In addition to functionality, the product will be evaluated based on non-functional factors such as performance, load-bearing qualities, and safety. The following types of testing will be utilized in the course of our validation checks:
+
+            <ul>
+                <li>
+                    Functional Testing
+                </li>
+                <li>
+                    Load Testing
+                </li>
+                <li>
+                    Performance Testing
+                </li>
+            </ul>
+
+            <h3><u>Test Cases</u></h3>
+            <p><strong>Functional Testing</strong></p>
+            <p>The system will be validated by performing tests on all of its functionality and ensuring that all of its requirements have been met by ensuring that they have been implemented as described.</p>
+
+            <style type="text/css">
+                .tg {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+
+                .tg td {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg th {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: normal;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg .tg-1wig {
+                    font-weight: bold;
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-av16 {
+                    color: #212529;
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-0lax {
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-w1dh {
+                    color: #212529;
+                    font-weight: bold;
+                    text-align: left;
+                    vertical-align: top
+                }
+            </style>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Case #</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Case Description</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Expected
+                                Results</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">FTC-1</span>
+                        </td>
+                        <td class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">User Accounts</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Southgate Admin.</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Dining Hall Managers</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Vendor</span><br></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                Each dining hall should have a singular account on the portal, without any replication. The vendor organization should also have a singular account.
+                            </span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">FTC-2</span>
+                        </td>
+                        <td class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Login & Security</span><br>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                All the users should be verified using OAuth. Unauthorized users must not log in.
+                        </span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">FTC-3</span>
+                        </td>
+                        <td class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Southgate Admin</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Updating the Product Listing
+                            </span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Placing Order</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Update received and confirmed products</span><br>
+                                <span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Communication with Vendor</span><br>
+                                <span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Label Printing</span><br></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                As part of the testing:
+                                The product list must be able to add new and delete old products without any error. The orders should automatically be sent out to the vendor at 1 PM, along with auto-updating of confirmation. Finally, the printers must successfully print labels when requested
+                                                            </span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">FTC-4</span>
+                        </td>
+                        <td class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">User Accounts</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Southgate Admin.</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Dining Hall Managers</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Vendor</span><br></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                Each dining hall should have a singular account on the portal, without any replication. The vendor organization should also have a singular account.
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">FTC-4</span>
+                        </td>
+                        <td class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Dining Hall</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Order request</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Confirming the products</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Confirming the delivery</span><br></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                As part of the testing:
+                                All the order requests and confirmation must be updated in real-time without any errors.
+                                                            </span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">FTC-5</span>
+                        </td>
+                        <td class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Vendors</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Orders</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Notes</span><br><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Order Acceptance</span><br>
+                                <span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Order History</span><br>
+                            </td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                The system must be able to update the vendors responses and notes in real time without any errors. A complete history must be displayed at will.
+                            </span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <p><strong>Performance Testing</strong></p>
+            <p>To ensure that the system is operating as expected, we are going to put it through performance testing.</p>
+
+            <style type="text/css">
+                .tg {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+
+                .tg td {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg th {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: normal;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg .tg-1wig {
+                    font-weight: bold;
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-0lax {
+                    text-align: left;
+                    vertical-align: top
+                }
+            </style>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Case #</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Case Description</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Expected
+                                Results</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">PTC-1</span>
+                        </td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Scalability</span></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The portal must be able to handle additional vendors and increased traffic.</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">PTC-2</span>
+                        </td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Speed</span></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The response time must be below the specified values mentioned while designing the website. It should ideally be below 0.2 secs, which is perceived as ‘instantaneous’ by the human brain.</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">PTC-3</span>
+                        </td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Stability.</span></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The portal must be stable, i.e; it should be able to function over time without failure.</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">PTC-4</span>
+                        </td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Integration</span></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The portal must work properly with regular integrations.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <p><strong>Load Testing</strong></p>
+            <p>Through the use of load testing, we will ensure that the system acts as it was designed to do when subjected to stress and that it will gracefully shut down if it is unable to meet the demand.</p>
+
+            <style type="text/css">
+                .tg {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+
+                .tg td {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg th {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: normal;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg .tg-1wig {
+                    font-weight: bold;
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-0lax {
+                    text-align: left;
+                    vertical-align: top
+                }
+            </style>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Case #</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Case Description</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Expected
+                                Results</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">LTC-1</span>
+                        </td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Maximum Operating Capacity</span></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">It should be able to operate beyond its capacity without failure</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">LTC-2</span>
+                        </td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">infrastructure.</span></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The current infrastructure should be sufficient to run the application</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">LTC-3</span>
+                        </td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">sustainability</span></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The portal must be sustainable at peak user load.</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">LTC-4</span>
+                        </td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Concurrent Users</span></td>
+                        <td class="tg-0lax"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The system should support the maximum number of concurrent users as defined in the design document.</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <h3><u>Traceability Matrix</u></h3>
+            <p><strong>Functional Requirement</strong></p>
+
+
+            <style type="text/css">
+                .tg {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+
+                .tg td {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg th {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: normal;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg .tg-1wig {
+                    font-weight: bold;
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-l2bf {
+                    background-color: #FFF;
+                    color: #222;
+                    font-weight: bold;
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-tsok {
+                    background-color: #FFF;
+                    color: #222;
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-mfw7 {
+                    background-color: #FFF;
+                    color: #212529;
+                    text-align: left;
+                    vertical-align: top
+                }
+            </style>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Req#</span>
+                        </th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Requirement
+                                Description</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Case</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FR-1</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system must support and authenticate the login for dining hall managers, Southgate manager, and vendors.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 1, FTC - 2, TIC - 8, TIC - 9, TIC - 10, TIC - 11, TIC - 12</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FR-2</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system must support the ability to check the availability of the products in the portal.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 3, PTC - 1, TIC - 2, TIC - 4, TIC - 6, TIC - 7</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FR-3</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system must support the ability to place orders for products and add or delete the number of items required.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 3, FTC - 4, PTC - 2, PTC - 3, LTC - 2, TIC - 2, TIC - 3, TIC - 6, TIC - 7</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FR-4</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system must support the ability to request items that are unavailable but necessary.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 3, FTC - 4, PTC - 2, PTC - 3, LTC - 2, LTC - 3</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FR-5</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system must support the ability to retrieve the orders and place them in the portal.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 3, FTC - 4, PTC - 2, PTC - 3, LTC - 2, LTC - 3, TIC - 2</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FR-6</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system must send confirmation of items once the orders have been accepted by the vendors.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 3, FTC - 5, PTC - 2, PTC - 3, LTC - 2, LTC - 2, TIC - 3</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FR-7</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system must support the ability to update the portal to reflect the availability of the items.</span></td>
+                        <td class="tg-l2bf"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 3, FTC - 4, FTC - 5, PTC - 2, LTC - 2, TIC - 3</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FR-8</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system must support the ability to give confirmation of delivery to the dining hall managers on the portal.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 3, FTC - 4, PTC - 2, LTC - 2, TIC - 3</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <br>
+
+            <p><strong>Non-Functional Requirement</strong></p>
+
+            <style type="text/css">
+                .tg {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+
+                .tg td {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg th {
+                    border-color: black;
+                    border-style: solid;
+                    border-width: 1px;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: normal;
+                    overflow: hidden;
+                    padding: 10px 5px;
+                    word-break: normal;
+                }
+
+                .tg .tg-1wig {
+                    font-weight: bold;
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-tsok {
+                    background-color: #FFF;
+                    color: #222;
+                    text-align: left;
+                    vertical-align: top
+                }
+
+                .tg .tg-mfw7 {
+                    background-color: #FFF;
+                    color: #212529;
+                    text-align: left;
+                    vertical-align: top
+                }
+            </style>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Req#</span>
+                        </th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Requirement
+                                Description</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Case</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">NFR-1</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The login credentials for dining hall managers, Southgate manager, and vendors shall be added to the system.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 1, FTC - 2, TIC - 4, TIC - 10, TIC - 11, TIC - 12</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">NFR-2</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">Background checks of the vendors must be done before adding them as vendors to the system.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 1, FTC - 2, TIC - 11</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">NFR-3</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system should be scalable in order to support more and more vendors.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">PTC - 1, LTC - 1, TIC - 11</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">NFR-4</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system should be capable of supporting multiple dining hall managers logged in at the same time.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">LTC - 1, LTC - 4, TIC - 12</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">NFR-5</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">Each order request should be processed within 2 seconds.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">PTC - 2, TIC - 4, TIC - 13</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">NFR-6</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The site should load within 3 seconds when the number of simultaneous users is > 10.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">PTC - 2, LTC - 2, LTC - 4, TIC - 13</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">NFR-7</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                The website should be supported on different browsers.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">LTC - 2, PTC - 3, TIC - 6, TIC - 7
+
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">NFR-8</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The date format must be as follows: month/date/year.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">TIC - 1, TIC - 8, TIC - 9
+
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">NFR-9</span>
+                        </td>
+                        <td class="tg-mfw7"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">There should be a dedicated printer so that the Southgate manager can print the labels for the corresponding orders.</span></td>
+                        <td class="tg-tsok"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#222;background-color:#FFF">FTC - 3, LTC - 2, PTC - 4
+
+                            </span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+
+            <div style="display: flex; justify-content: space-between">
+                <a href="testPlan.html">Previous: Test Plan and Integration</a>
+                <a href="complete.html">Next: Complete</a>
+            </div>
+
+        </main>
+</body>
+
+</html>

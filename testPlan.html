@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SDQ Project 2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        ul.horizontal {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.horizontal li {
+            float: left;
+        }
+
+        ul.horizontal li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.horizontal li a:hover:not(.active) {
+            background-color: cyan;
+            color: black;
+        }
+
+        ul.horizontal li a.active {
+            background-color: #04AA6D;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky-top">
+        <div class="w3-col m8">
+            <ul class="horizontal">
+                <li><a class="navbar-brand" href="index.html">SDQ Project 2</a></li>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="testScope.html">Test Scope</a></li>
+                <li><a class="active" href="testPlan.html">Test Plan and Integration</a></li>
+                <li><a href="validationTest.html">Validation Test</a></li>
+                <li><a href="complete.html">Full Text</a></li>
+                <li class="rightli" style="float:right"><a href="#">Sarthak
+                K., Sarthak V., Mehul B., Priyanshi</a>
+                </li>
+            </ul>
+            <br>
+        </div>
+
+        <main class="container">
+
+            <h1 style="text-align: center; padding: .5em 0 .75em 0"><b><u>Centralized Food Ordering Portal: Virginia Tech
+                    </u></b></h1>
+            <h3>Test Plan and Integration</h3>
+            <br>
+            <div class="col-md-12">
+
+                <p>The proposed solution is designed using Model-View-Template architecture. Model is basically the database part of the web application. View can be considered as the back-end of the application where all the core code resides. View also connects Model as well as Templates. Templates are HTML files which will be rendered on the front-end of the application. All the user interaction will happen with the front-end of the application. Similarly, all the required results will be displayed on the front-end. &nbsp;</p>
+               
+                <p>Testing strategy of the web application should test all 3 components of the architecture. If we can break down the testing plan for each component separately, it will further help us to narrow down the problem or bugs. Thus, bug fixing could be done more efficiently and accurately. Dividing the testing into different phases will further aid us to automate the testing phase using different tools such as Selenium, visual studio etc. Use of tools will further solidify the system components in terms of bug fixes.</p>
+                
+                <p>Once the component testing is complete, we can move towards the system testing where we can check the behavior of the system, in different scenarios to make sure that the designed components are working properly and in cohesion with each other. In other words, we can say that the component testing is low level testing and system testing is high level testing. Therefore, it can be concluded that we are moving from lowest level to highest level. If there are certain issues in system testing, but not in component level, we have to check the compatibility of different components with each other. The different components will be tested for different edge cases and properties. They are as follows: - 
+                </p>
+
+                <ul>
+                    <li>
+                        <p>&nbsp;Front-end: Testing on the front-end will mostly be focused on the GUI of the application. Validations will be performed on different fields of HTML forms. E.g. fields should not accept some random text but should accept text related to orders only, Fields should not be kept empty etc.
+</p>
+                    </li>
+                    <li>
+                        <p>&nbsp;Back-end: Testing on back-end will be focused mostly on the core logic. Are we able to generate accurate results, are we able to retrieve the data from the front-end and are computed results successfully sent out to the front-end or not, along with the database connections will be checked. Edge cases will cover the core logic scenarios. API’s will be checked. User Authentication is also one of the key areas which will be checked during this phase. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>&nbsp;Database: Testing in this phase will be focused on the database queries, and database schema. We will also check if the database is following all the ACID properties. Edge cases will cover SQL injection attacks, and other security concerns related with the stored data.</p>
+                    </li>
+                </ul>
+                <br>
+                <h3><u>Front-end Testing Phase</u></h3>
+                <p>Testing will be focused on the system accessibility, system GUI and esthetic features along with looks of the GUI. The factors which will be tested are Design, functionality, performance. </p>
+             
+
+                <style type="text/css">
+                    .tg {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                    }
+
+                    .tg td {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+
+                    .tg th {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+
+                    .tg .tg-1wig {
+                        font-weight: bold;
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-av16 {
+                        color: #212529;
+                        text-align: left;
+                        vertical-align: top
+                    }
+                </style>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-1wig"><span
+                                    style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                    Test Case No</span></th>
+                            <th class="tg-1wig"><span
+                                    style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                    Case Description</span></th>
+                            <th class="tg-1wig"><span
+                                    style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Passing Criteria</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-1</span>
+                            </td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Compulsory Field validation</span></td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Error messages should be displayed if any field is left blank. The compulsory fields should be marked with * or any other symbol.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-2</span>
+                            </td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Form Validation
+                                    </span></td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Form should be correctly populated and submitted. Validations should be implemented for every field to make sure only acceptable text is accepted. If not, Error message should be displayed.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-3</span>
+                            </td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">CSS and visual effects validation</span></td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">CSS and all other visual esthetic contents should be loaded without any errors. If not, the web page should not be loaded and appropriate error messages should be displayed. </span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-4</span>
+                            </td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Dynamic Content Validation</span></td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Any dynamic content which will be displayed should be correctly loaded.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-5</span>
+                            </td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Help section
+                                    </span></td>
+                            <td class="tg-av16"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">There should be a help section present on the website which will guide the user on website usage.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br>
+                <h3><u>Backend Testing Phase</u></h3>
+                <p><strong>Test Procedure</strong></p>
+                Back-end will have the core business logic of the web application. Therefore, back-end testing will be the most important phase. We have to test the business logic along with connections and data-flow from back-end to front-end and back-end to database. System security should also be tested. API’s calls should be giving expected results. HTTP headers should be checked. This phase will consist of multiple sub-testing phases to ensure we are not missing out on anything. 
+                Sub-Phases will be as follows:- 
+                
+<ul>
+    <br>
+    <li>
+       <u> Business Logic Testing </u><br><br>
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-1wig"><span
+                            style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                            Test Case No</span></th>
+                    <th class="tg-1wig"><span
+                            style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                            Case Description</span></th>
+                    <th class="tg-1wig"><span
+                            style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Passing Criteria</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-6</span>
+                    </td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Positive testing</span></td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Results of the APIs as well as generated results according to HTML forms should match the expectations.</span></td>
+                </tr>
+                <tr>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-7</span>
+                    </td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Edge case tests
+                            </span></td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Results of the APIs as well as generated results according to HTML forms should match the expectations.</span></td>
+                </tr>
+                <tr>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-8</span>
+                    </td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Negative testing</span></td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Given the wrong input but in the correct format, the system should be able to make out the wrong results and appropriate errors should be thrown.  </span></td>
+                </tr>
+                <tr>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-9</span>
+                    </td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Invalid input testing</span></td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Invalid inputs should be handled properly.</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+    
+    </li>
+    <br>
+    <li>
+        <u> Security Testing </u><br><br> System security is of utmost importance. Data leak should be prevented. Non-authorized access should not be permitted. All of these will be carried out in Security Testing.
+        <br>
+        <table class="tg">
+            <thead>
+                <tr>
+                    <th class="tg-1wig"><span
+                            style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                            Test Case No</span></th>
+                    <th class="tg-1wig"><span
+                            style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                            Case Description</span></th>
+                    <th class="tg-1wig"><span
+                            style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Passing Criteria</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-10</span>
+                    </td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Authentication testing</span></td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">User authentication should give us the expected results.</span></td>
+                </tr>
+                <tr>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-11</span>
+                    </td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Role testing
+                            </span></td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">There are 3 roles in the system i.e Vendor, Manager and Southgate Manager. System should take the respective user to the correct landing page. Along with this permission results also should follow the expected trajectory.</span></td>
+                </tr>
+                <tr>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-12</span>
+                    </td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Access control testing</span></td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Access control policies should be followed by the system.  </span></td>
+                </tr>
+                <tr>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-13</span>
+                    </td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Port and protocol Testing</span></td>
+                    <td class="tg-av16"><span
+                            style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">System should use the expected ports and protocols.</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </li>
+</ul>
+
+               
+<br>
+<h3><u>Database Testing Phase</u></h3>
+<p>
+    In this phase we will test the Database connections, Database ACID properties and data Integrity. Along with this, some security checks should also be tested out. For e.g. SQL injection attack, Data Leak check etc. Database Schema will also be tested. 
+</p>
+               <br>
+               <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Test Case No</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Test
+                                Case Description</span></th>
+                        <th class="tg-1wig"><span
+                                style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Passing Criteria</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-14</span>
+                        </td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Database schema testing</span></td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">The designed database schema should be in-line with the expected design database schema. </span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-15</span>
+                        </td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">SQL procedure testing
+                                </span></td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">The stored SQL procedures should give the expected results. If not, the procedure should be able to handle the incorrect outputs.</span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-16</span>
+                        </td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Database Definition Testing</span></td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">The designed ER diagrams should be followed.   </span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-17</span>
+                        </td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Security Testing</span></td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">SQL injection attacks, Data Leak Attacks etc. should be checked and the system should be able to handle all the attacks. </span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-18</span>
+                        </td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Important Data Encryption Testing</span></td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">The stored user password should be encrypted with hashing techniques before storing them in the database. </span></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">TIC-19</span>
+                        </td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">ACID Property Testing</span></td>
+                        <td class="tg-av16"><span
+                                style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:transparent">Database should follow all the ACID properties properly. </span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+                <br>
+
+                <div style="display: flex; justify-content: space-between">
+                    <a href="testScope.html">Previous: Test Scope</a>
+                    <a href="validationTest.html">Next: Validation Test</a>
+                </div>
+            </div>
+        </main>
+</body>
+
+</html>

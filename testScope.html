@@ -1,0 +1,542 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SDQ Project 2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        ul.horizontal {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.horizontal li {
+            float: left;
+        }
+
+        ul.horizontal li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.horizontal li a:hover:not(.active) {
+            background-color: cyan;
+            color: black;
+        }
+
+        ul.horizontal li a.active {
+            background-color: #04AA6D;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky-top">
+        <div class="w3-col m8">
+            <ul class="horizontal">
+                <li><a class="navbar-brand" href="index.html">SDQ Project 2</a></li>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a class="active" href="testScope.html">Test Scope</a></li>
+                <li><a href="testPlan.html">Test Plan and Integration</a></li>
+                <li><a href="validationTest.html">Validation Test</a></li>
+                <li><a href="complete.html">Full Text</a></li>
+                <li class="rightli" style="float:right"><a href="#">Sarthak
+                K., Sarthak V., Mehul B., Priyanshi</a>
+                </li>
+            </ul>
+            <br>
+        </div>
+
+        <main class="container">
+
+            <h1 style="text-align: center; padding: .5em 0 .75em 0"><b><u>Centralized Food Ordering Portal: Virginia Tech
+                    </u></b></h1>
+            <h2>Test Scope</h2>
+            <br>
+            <div class="col-md-12">
+
+                <h3><u>Test Items</u></h3>
+                For the testing scope, we will be looking at the following components: 
+                <ul>
+                    <li>
+                        The GUI testing of web applications is required, and it will cover a range of GUI components including usability, functionality, accessibility, and more.
+                    </li>
+                    <li>
+                        Through the Rest API, managers and vendors can speak with the system directly. Testing for both functionality and security should be done on APIs.
+                    </li>
+                    <li>
+                        In order to ensure that data leaks and sql injection are not possible, security testing should also be done.
+                    </li>
+                </ul>
+
+                <br>
+
+                <h3><u>Functional Requirement</u></h3>
+                <style type="text/css">
+                    .tg {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                    }
+
+                    .tg td {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+
+                    .tg th {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+
+                    .tg .tg-fymr {
+                        border-color: inherit;
+                        font-weight: bold;
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-e8tx {
+                        background-color: #FFF;
+                        border-color: inherit;
+                        color: #212529;
+                        font-weight: bold;
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-0pky {
+                        border-color: inherit;
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-rmlg {
+                        background-color: #FFF;
+                        border-color: inherit;
+                        color: #212529;
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-0lax {
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-mfw7 {
+                        background-color: #FFF;
+                        color: #212529;
+                        text-align: left;
+                        vertical-align: top
+                    }
+                </style>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-fymr"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">No.</span>
+                            </th>
+                            <th class="tg-e8tx"><span
+                                    style="font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">Requirement
+                                    </span></th>
+                            <th class="tg-fymr"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                    Scope</span></th>
+                            <th class="tg-fymr"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Description</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-0pky"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">FR-1</span>
+                            </td>
+                            <td class="tg-rmlg"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The system must support and authenticate the login for dining hall managers, southgate manager and vendors.span></td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The
+                                    dining hall managers, southgate managers and vendors all should be able to create an account on the web application and log in to the system.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">FR-2</span>
+                            </td>
+                            <td class="tg-rmlg"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The system must support the ability to check the availability of the products in the portal.</span></td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The users of the system must be able to check the availability of the products in the GUI.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">FR-3</span>
+                            </td>
+                            <td class="tg-rmlg"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The system must support the ability to place orders for products and add or delete the number of items required.</span></td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The GUI must reflect the changes to quantities of items when altered by the user. The order should be placed successfully when no required fields are missing.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">FR-4</span>
+                            </td>
+                            <td class="tg-rmlg"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The system must support the ability to request for items that are unavailable but necessary.</span></td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The users should be allowed to make the request for unavailable but necessary items.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">FR-5</span>
+                            </td>
+                            <td class="tg-rmlg"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The system must support the ability to retrieve the orders and place them in the portal.</span></td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                    The system should retrieve the orders from the database successfully and display them to the relevant users in the GUI.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">FR-6</span>
+                            </td>
+                            <td class="tg-rmlg"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The system must send confirmation of items once the orders have been accepted by the vendors.</span></td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                    The users should receive confirmation from the system when the vendor accepts the order.
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">FR-7</span>
+                            </td>
+                            <td class="tg-rmlg"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The system must support the ability to update the portal to reflect the availability of the items.</span></td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                    The relevant users should be able to update the item availability on the portal and the GUI should reflect this availability.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span
+                                    style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">FR-8</span>
+                            </td>
+                            <td class="tg-rmlg"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The system must support the ability to give confirmation of delivery to the dining hall managers on the portal.
+                                </span></td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Out of scope</span>
+                            </td>
+                            <td class="tg-0pky"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Once the order has been delivered, the dining hall managers should receive confirmation.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <br>
+
+                <h3><u>Non-Functional Requirement</u></h3>
+                <style type="text/css">
+                    .tg {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                    }
+
+                    .tg td {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+
+                    .tg th {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+
+                    .tg .tg-1wig {
+                        font-weight: bold;
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-rvay {
+                        background-color: #FFF;
+                        color: #212529;
+                        font-weight: bold;
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-0lax {
+                        text-align: left;
+                        vertical-align: top
+                    }
+
+                    .tg .tg-mfw7 {
+                        background-color: #FFF;
+                        color: #212529;
+                        text-align: left;
+                        vertical-align: top
+                    }
+                </style>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-1wig"><span
+                                    style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">No.</span>
+                            </th>
+                            <th class="tg-rvay"><span
+                                    style="font-weight:700;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">Requirement
+                                    </span></th>
+                            <th class="tg-1wig"><span
+                                    style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                    Scope</span></th>
+                            <th class="tg-1wig"><span
+                                    style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Description</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFR-1</span>
+                            </td>
+                            <td class="tg-mfw7"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The login credentials for dining hall managers, southgate managers and vendors shall be added to the system.</span></td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Once a user of a particular role is created, the credentials should be added to the database.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFR-2</span>
+                            </td>
+                            <td class="tg-mfw7"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">Background check of the vendors must be done before adding them as vendors to the system. </span></td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Out of scope</span>
+                            </td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Testing the verifiability of background checks of the vendors is not in our scope.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFR-3</span>
+                            </td>
+                            <td class="tg-mfw7"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    The system should be scalable in order to support more and more vendors.</span></td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"> Adding more and more vendors should not cause the system to fail.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFR-4</span>
+                            </td>
+                            <td class="tg-mfw7"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The system should be capable of supporting multiple dining hall managers logged in at the same time.</span></td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                Multiple dining hall managers should be able to access the system without causing it to fail.
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFR-5</span>
+                            </td>
+                            <td class="tg-mfw7"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">Each order request should be processed within 2 seconds.</span></td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Out of scope</span>
+                            </td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                Order requests should be processed within the time limit specified. 
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFR-6</span>
+                            </td>
+                            <td class="tg-mfw7"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The site should load within 3 seconds when the number of simultaneous users is > 10.
+                                </span></td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The system should not fail when the number of simultaneous users is high.</span><br></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFR-7</span>
+                            </td>
+                            <td class="tg-mfw7"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The website should be supported on different browsers. </span></td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The
+                                    web application should be able to run on different browsers.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFR-8</span>
+                            </td>
+                            <td class="tg-mfw7"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">The date format must be as follows: month/date/year. </span></td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">In scope</span>
+                            </td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                The GUI should display dates in the specified format only.
+                                </span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFR-9</span>
+                            </td>
+                            <td class="tg-mfw7"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#212529;background-color:#FFF">
+                                    There should be a dedicated printer so that the southgate manager can print the labels for the corresponding orders.</span></td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Out of scope</span>
+                            </td>
+                            <td class="tg-0lax"><span
+                                    style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+                                    Verifying the printers for soutgate managers is not in the scope of our testing.
+                                    </span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br>
+
+                <h3><u>Exit Criteria</u></h3>
+            We have the following exit criteria:
+                <ul>
+                    <li>
+                        All planned testing has been completed.
+                    </li>
+                    <li>
+                        There shouldn't be any unresolved high severity or critical faults.
+                    </li>
+                    <li>
+                        All of the high-risk areas have been carefully examined.
+                    </li>
+                    <li>
+                        The code's coverage requirements ought to be met.
+                    </li>
+                </ul>
+
+
+
+                <br>
+
+                <div style="display: flex; justify-content: space-between">
+                    <a href="index.html">Previous: Introduction</a>
+                    <a href="testPlan.html">Next: Test Plan and Integration</a>
+                </div>
+
+            </div>
+        </main>
+</body>
+
+</html>
